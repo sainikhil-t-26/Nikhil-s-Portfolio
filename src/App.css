@@ -1,0 +1,162 @@
+/* Global background and font */
+body, html {
+  background: linear-gradient(135deg, #0a0a0a, #1a002f);
+  color: #f0f0f0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Purple accent text */
+.text-purple {
+  color: #bb86fc;
+}
+
+/* HERO FLEX with image */
+.hero-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .hero-flex {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.hero-img .profile-pic {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #bb86fc;
+  box-shadow: 0 0 20px rgba(187, 134, 252, 0.6);
+}
+
+/* Skills */
+.skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.skill-icon {
+  text-align: center;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.skill-icon svg {
+  font-size: 3rem;
+}
+
+.skill-icon.large svg {
+  font-size: 4rem;
+}
+
+.skill-icon:hover {
+  transform: scale(1.15);
+  color: #bb86fc;
+}
+
+/* Experience timeline */
+.timeline {
+  border-left: 3px solid #bb86fc;
+  padding-left: 2rem;
+}
+
+.timeline-item {
+  margin-bottom: 2rem;
+}
+
+.timeline-item h5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Projects */
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 4px solid #bb86fc;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(187, 134, 252, 0.5);
+}
+
+.project-card h4 {
+  color: #bb86fc;
+}
+
+.tech-icons {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1rem 0;
+  justify-content: center;
+}
+
+.tech-icons.big svg {
+  font-size: 2.5rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.tech-icons.big svg:hover {
+  transform: scale(1.2);
+  color: #bb86fc;
+}
+
+/* Certifications carousel */
+.carousel .carousel-item img {
+  border: 3px solid #bb86fc;
+  transition: transform 0.3s;
+}
+
+.carousel .carousel-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Social icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 2.5rem;
+  margin: 2rem 0;
+}
+
+.social-link {
+  color: #f0f0f0;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-link:hover {
+  transform: scale(1.3);
+  color: #bb86fc;
+}
+
+/* Resume button */
+.btn-outline-light {
+  border-color: #bb86fc;
+  color: #bb86fc;
+}
+
+.btn-outline-light:hover {
+  background: #bb86fc;
+  color: #0a0a0a;
+}
+
+/* Footer */
+footer {
+  border-top: 2px solid #bb86fc;
+  margin-top: 4rem;
+  padding-top: 1rem;
+}

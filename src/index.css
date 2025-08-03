@@ -1,0 +1,22 @@
+body {
+  background-color: #1c002b;
+}
+
+.text-purple {
+  color: #a85cf9 !important;
+}
+
+.border-purple {
+  border: 2px solid #a85cf9;
+}
+
+.btn-purple {
+  background-color: #a85cf9;
+  color: white;
+  border-radius: 8px;
+}
+
+.btn-purple:hover {
+  background-color: #8120c6;
+  color: white;
+}
